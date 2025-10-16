@@ -1,5 +1,5 @@
 # Lista que armazena todas as informações cadastradas
-informacoes = []  # Aqui vão todas as infos, tipo o HD do Totem 🖥️
+informacoes = []  # Aqui vão todas as infos, tipo o HD do Totem 
 
 def cadastrar_informacao(lista):
     """
@@ -7,7 +7,7 @@ def cadastrar_informacao(lista):
     Cada informação contém título, tipo e descrição.
     """
     print("\n--- Cadastro de Nova Informação ---")
-    # Pega os dados do usuário. Não esquece de digitar certo, senão o Totem vai chorar 😢
+    # Pega os dados do usuário. Não esquece de digitar certo, senão o Totem vai chorar
     titulo = input("Digite o título: ").strip()
     tipo = input("Digite o tipo (educativo, cultural, lazer etc.): ").strip()
     descricao = input("Digite a descrição: ").strip()
@@ -18,8 +18,8 @@ def cadastrar_informacao(lista):
         "descricao": descricao
     }
 
-    lista.append(nova_info)  # Adiciona à lista, tipo colocar na mochila do Totem 🎒
-    print("\n✅ Informação cadastrada com sucesso! (O Totem aprovou 😎)\n")
+    lista.append(nova_info)  # Adiciona à lista, tipo colocar na mochila do Totem 
+    print("\n✅ Informação cadastrada com sucesso! (O Totem aprovou)\n")
 
 def listar_informacoes(lista):
     """
@@ -27,14 +27,14 @@ def listar_informacoes(lista):
     """
     print("\n--- Informações Cadastradas ---")
     if not lista:
-        print("Nenhuma informação cadastrada ainda. Totem está vazio 😬")
+        print("Nenhuma informação cadastrada ainda. Totem está vazio")
     else:
         for i, info in enumerate(lista, start=1):
             print(f"\nInformação {i}:")
             print(f"📌 Título: {info['titulo']}")
             print(f"📂 Tipo: {info['tipo']}")
             print(f"📝 Descrição: {info['descricao']}")
-    print()  # linha em branco final, porque ninguém gosta de bagunça 😅
+    print()  # linha em branco final, porque ninguém gosta de bagunça
 
 # --- Programa Principal ---
 while True:
@@ -45,13 +45,13 @@ while True:
 
     opcao = input("Escolha uma opção: ").strip()
 
-    # Se liga nas opções! É tipo GPS do Totem 🚗
+    # Se liga nas opções! É tipo GPS do Totem
     if opcao == "1":
         cadastrar_informacao(informacoes)
     elif opcao == "2":
         listar_informacoes(informacoes)
     elif opcao == "0":
-        print("\n👋 Encerrando o programa. Até mais! (O Totem vai tirar um cochilo 💤)")
+        print("\nEncerrando o programa. Até mais!")
         break
     else:
-        print("\n⚠️ Opção inválida! Tente novamente. (Totem não entende alienígena 👽)\n")
+        print("\n⚠️Opção inválida! Tente novamente.\n")
