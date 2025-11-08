@@ -1,4 +1,4 @@
-## ✅ Sprint 2 – Funcionalidades adicionadas
+## Sprint 2 – Funcionalidades adicionadas
 
 - Código reorganizado utilizando **modularização** (main.py + funcoes.py)
 - Validação de entradas:
