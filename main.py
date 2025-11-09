@@ -1,6 +1,5 @@
 # main.py
-# Agora o main.py fica limpo e elegante.
-# Ele só chama as funções criadas no arquivo funcoes.py
+# chama as funções criadas no arquivo funcoes.py
 
 from functions_sprint import (
     informacoes,
